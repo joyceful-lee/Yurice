@@ -11,11 +11,12 @@ var img = document.querySelectorAll(".sub img");
 var modalImg = document.getElementById("img01");
 
 img.forEach((imgA) => {
-    imgA.onclick = function () {
+    imgA.addEventListener('click', function () {
         modal.style.display = "block";
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
     }
+    )
 });
 
 var span = document.getElementsByClassName("close-full")[0];
