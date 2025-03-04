@@ -126,12 +126,11 @@
 
 #portfolio-text {
     z-index: 100;
-    position: absolute;
+    position: fixed;
     color: var(--green);
     font-family: var(--dynapuff);
     font-size: 48px;
     left: 50px;
-    padding-left: 400px;
     bottom: 430px;
     font-weight: 700;
     text-transform: uppercase;
@@ -139,11 +138,10 @@
 
 #personal-text {
     z-index: 100;
-    position: absolute;
+    position: relative;
     color: var(--green);
     font-family: var(--dynapuff);
     font-size: 48px;
-    padding-left: 450px;
     left: 50px;
     bottom: 5px;
     font-weight: 700;
