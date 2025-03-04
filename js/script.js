@@ -10,11 +10,6 @@ var modal = document.getElementById("myModal");
 var img = document.querySelectorAll(".sub img");
 var modalImg = document.getElementById("img01");
 
-function image(event) {
-    modal.style.display = "block";
-    modalImg.src = event.target.src;
-}
-
 img.forEach((imgA) => {
     imgA.addEventListener('click', function () {
         modal.style.display = "block";
@@ -26,4 +21,10 @@ img.forEach((imgA) => {
 var span = document.getElementsByClassName("close-full")[0];
 span.onclick = function () {
     modal.style.display = "none";
+}
+
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }
