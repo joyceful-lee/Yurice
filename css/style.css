@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&family=Gamja+Flower&family=Moirai+One&display=swap');
+
+@import url("sections/header.css");
+@import url("sections/hero.css");
+@import url("sections/about.css");
+@import url("sections/portfolio.css");
+@import url("sections/footer.css");
+
+:root {
+  --dynapuff: "DynaPuff", serif;
+  --moirai-one-regular: "Moirai One", serif;
+  --gamja-flower-regular: "Gamja Flower", serif;
+  --montserrat: "Montserrat", serif;
+
+  --pink: #ffa1d8;
+  --green: #5b9e59;
+
+  --black: #000000;
+  --white: #fff;
+  --cream: #fff0de;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: var(--cream);
+}
+
+img.bg {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+@media screen and (max-width: 1024px) {
+  img.bg {
+    left: 50%;
+    margin-left: -512px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
